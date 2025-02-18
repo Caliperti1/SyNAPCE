@@ -5,7 +5,9 @@ Block Runner is MATLAB based video game where a user must navigate themselves th
 
 ## Acknowledgemnts 
 Dr. Josiah Steckenrider
+
 Chris Aliperti
+
 Caspian Bell
 
 The AMTI software was acquired through direct communication with AMTI. Accompanying drivers and support can be found at (https://www.amti.biz/support/downloads/)
