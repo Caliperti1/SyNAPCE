@@ -41,9 +41,20 @@ The folder contains many files which there is no reason to open as they only ser
 
 **Block_Runner_PastProcessing.m** - Once a trial of the game is complete, this calculates given parameters from the raw COP data and stores it in an excel file. It calculates the total excursions of the COP in both the AP and ML directions, the average velocity in both direction, the average ML acceleration, the total penalty, the modulus, and the time to new stability. All of this data is stored on one excel with each time the code is run it creating a new line in the excel.  
 
-## Troubleshooting 
+**AMTIdataApp.m** - program provided by AMTI as an example of interfacing the force plate with Matlab. Recommend starting with this code the first time you run your forceplate to ensure you have connected it properly.
+
+**Block_Runner_Keyboard.m** - separate stand-alone program included for game development purposes. It can be run without any extra functions or hardware and uses the keyboard for control.
+
+
+## Troubleshooting and notes 
+
+-	Many of the files contained in this folder are unnecessary for running “Block_Runner_Forceplate.m”, but they are included for safety and allow for additional features to be adde using the full capacity of the AMTI Forceplate 
+-	Run the **AMTIdataApp.m** file when you first plug in your forceplate.  This GUI-based application to test basic connectivity and data collection of the force plate. The most common error is with the proper storage of the Dll files (must be int he same folder!)
+- To first understand the game mechanics, recommend running **Block_Runner_Keyboard.m**. 
+
 
 ## Updates in progress 
 
-(1) Moving all user defined variables to a config function to avoid users from having to manipulate code in multiple scripts
+(1) Moving all user defined variables to a config function to avoid users from having to manipulate code in multiple scripts.
+
 (2) Updating data management to comply with new protocol
